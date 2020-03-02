@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_consulta_combo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultaSpinner"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione una Opción"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Spinner
+        android:id="@+id/idspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:saveEnabled="true">
+
+        <TextView
+            android:id="@+id/idCampoTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="To do"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idContenidoCampoTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/idContenidoCampoFecha"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:layout_toEndOf="@+id/idCampoTodo"
+            android:layout_toRightOf="@+id/idCampoTodo"
+            android:layout_weight="1"
+            android:text="" />
+
+
+        <CheckBox
+            android:id="@+id/idContenidocheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/idCampoCompletado"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="35dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/idContenidoCampoFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/idCampoFecha"
+            android:layout_alignStart="@+id/idContenidoCampoTodo"
+            android:layout_alignLeft="@+id/idContenidoCampoTodo"
+            android:layout_alignBottom="@+id/idCampoFecha"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/idCampoFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/idCampoCompletado"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="0.5"
+            android:text="Fecha"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idCampoCompletado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idCampoTodo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="0.5"
+            android:text="Completado"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/idBotonRegistrar"
+            android:layout_width="189dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ovalo"
+            android:onClick="onClick"
+            android:text="Registrar"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/idConsultaindividual"
+            android:layout_width="222dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rectangle"
+            android:onClick="onClick"
+            android:text="Consultar"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/idBotonRegistrar"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/idBotonConsultaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onClick"
+            android:text="Consultar Lista Usando Spinner"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idBotonRegistrar" />
+
+        <Button
+            android:id="@+id/idBotonConsultaListview"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/line"
+            android:onClick="onClick"
+            android:text="Consultar Lista Usando ListView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idBotonConsultaSpinner" />
+
+        <Button
+            android:id="@+id/idBotonRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/design_default_color_on_secondary"
+            android:onClick="onClick"
+            android:text="Consultar Lista Usando Recycler"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idBotonConsultaListview" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idBotonUnoMas"
+            android:layout_width="69dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="332dp"
+            android:layout_marginLeft="332dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            app:fabSize="auto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idBotonRecycler"
+            app:srcCompat="@drawable/unomas" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="199dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Clique para registrar otro usuario"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/idBotonUnoMas"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idBotonRecycler" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="193dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="MENÚ"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

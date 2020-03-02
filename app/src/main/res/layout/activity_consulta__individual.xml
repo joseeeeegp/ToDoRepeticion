@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idConsultaindividual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Consulta_Individual">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/idCampoId"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="ID"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/idBotonBuscar"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buscar"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/id_Todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To Do"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/id_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/idComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Complete"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="412dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/idBotonActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Actualizar"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/idBotonEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar"
+            android:onClick="onClick"/>
+    </LinearLayout>
+</LinearLayout>
